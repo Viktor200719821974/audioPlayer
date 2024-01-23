@@ -1,0 +1,35 @@
+.main_div_bodyComponent {
+    width: 40%;
+    height: 70%;
+    border: 2px solid #d1c7c7;
+    border-radius: 16px;
+    box-shadow: 2px 4px #b5aeae;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.div_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.div_name_song {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.div_time_play {
+    border: 1px solid #d1c7c7;
+    height: 4px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+.main_div_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}

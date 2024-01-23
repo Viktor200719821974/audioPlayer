@@ -1,0 +1,12 @@
+.wrap {
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75.2vh;
+    /* background: red; */
+}
+.main_div_mainPage {
+    display: flex;
+    flex-direction: column;
+}
