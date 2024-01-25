@@ -4,7 +4,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10%;
+    height: 70px;
     width: 100%;
     border-bottom: 2px solid #d1c7c7;
 }

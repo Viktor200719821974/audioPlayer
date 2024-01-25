@@ -1,27 +1,56 @@
-import React from "react";
-import { SlPlaylist } from "react-icons/sl";
-import { IoPlayBackOutline, IoPlayOutline, IoPlayForwardOutline } from "react-icons/io5";
-import { TbPlayerStop } from "react-icons/tb";
+import React, { useState, useRef } from "react";
 
 import "../style/BodyComponent.css";
+import { tracks } from "../constants/constants";
+import ControlsComponent from "./ControlsComponent";
+import DisplayTrackComponent from "./DisplayTrackComponent";
+import ProgressBarComponent from "./ProgressBarComponent";
 
 const BodyComponent = () => {
+    const [trackIndex, setTrackIndex] = useState(0);
+    const [currentTrack, setCurrentTrack] = useState(tracks[trackIndex]);
+    const [timeProgress, setTimeProgress] = useState(0);
+    const [duration, setDuration] = useState(0);
+    const audioRef = useRef();
+    const progressBarRef = useRef();
+
+    const handleNext = () => {
+        if (trackIndex >= tracks.length - 1) {
+            setTrackIndex(0);
+            setCurrentTrack(tracks[0]);
+        } else {
+            setTrackIndex((prev) => prev + 1);
+            setCurrentTrack(tracks[trackIndex + 1]);
+        }
+    };
+
     return (
         <div className="main_div_bodyComponent">
-            <div className="div_image">
-                <SlPlaylist size={"150px"}/>
-            </div>
-            <div className="div_name_song">
-                Name song
-            </div>
-            <div className="div_time_play">
-
-            </div>
-            <div className="main_div_buttons">
-                <IoPlayBackOutline size={"40px"} style={{marginRight: "20px", cursor: "pointer"}}/>
-                <IoPlayOutline size={"40px"} style={{marginRight: "20px", cursor: "pointer"}}/>
-                <TbPlayerStop size={"40px"} style={{marginRight: "20px", cursor: "pointer"}}/>
-                <IoPlayForwardOutline size={"40px"} style={{cursor: "pointer"}}/>
+            <div>
+                <DisplayTrackComponent
+                    currentTrack={currentTrack}
+                    audioRef={audioRef}
+                    setDuration={setDuration}
+                    progressBarRef={progressBarRef}
+                    handleNext={handleNext}
+                />
+                <ControlsComponent
+                    audioRef={audioRef}
+                    progressBarRef={progressBarRef}
+                    duration={duration}
+                    setTimeProgress={setTimeProgress}
+                    tracks={tracks}
+                    trackIndex={trackIndex}
+                    setCurrentTrack={setCurrentTrack}
+                    setTrackIndex={setTrackIndex}
+                    handleNext={handleNext}
+                />
+                <ProgressBarComponent
+                    progressBarRef={progressBarRef}
+                    audioRef={audioRef}
+                    timeProgress={timeProgress}
+                    duration={duration}
+                />
             </div>
         </div>
     );

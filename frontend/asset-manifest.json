@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.05df77b7.css",
-    "main.js": "/static/js/main.00080f0b.js",
+    "main.css": "/static/css/main.67c587ab.css",
+    "main.js": "/static/js/main.afd5f57b.js",
     "static/js/787.56381112.chunk.js": "/static/js/787.56381112.chunk.js",
+    "static/media/georgia_-_georgia_-_disco_farisco_cover_-_the_kolors_italodisco_(z3.fm).mp3": "/static/media/georgia_-_georgia_-_disco_farisco_cover_-_the_kolors_italodisco_(z3.fm).5cafc04421cdeea3a9ee.mp3",
+    "static/media/maksim_borodin_-_jakbi_ne_ti_(z3.fm).mp3": "/static/media/maksim_borodin_-_jakbi_ne_ti_(z3.fm).5fd2288b05c72ed9ec14.mp3",
+    "static/media/volkanov_-_tebe_znajshov_(z3.fm).mp3": "/static/media/volkanov_-_tebe_znajshov_(z3.fm).34bca32924b1bf8b0c52.mp3",
+    "static/media/ukrainskie_hiti_-_dima_prokopov_-_kava_z_krapljami_doshchu_(z3.fm).mp3": "/static/media/ukrainskie_hiti_-_dima_prokopov_-_kava_z_krapljami_doshchu_(z3.fm).2138d08665d67bccb3a4.mp3",
+    "static/media/muzika_v_mashinu_2024_-_dj_dimixer__favia_-_one_of_us_(z3.fm).mp3": "/static/media/muzika_v_mashinu_2024_-_dj_dimixer__favia_-_one_of_us_(z3.fm).f7fc24d12cff96ae4719.mp3",
+    "static/media/enisa__wenzl_mcgowen_-_disco_cone_take_it_high_(z3.fm).mp3": "/static/media/enisa__wenzl_mcgowen_-_disco_cone_take_it_high_(z3.fm).140c4bb3752059c65f2d.mp3",
+    "static/media/klavdia_petrivna__kava_-_znajdi_mene_kava_remix_(z3.fm).mp3": "/static/media/klavdia_petrivna__kava_-_znajdi_mene_kava_remix_(z3.fm).d31d9e25fec2d0f8181e.mp3",
     "index.html": "/index.html",
-    "main.05df77b7.css.map": "/static/css/main.05df77b7.css.map",
-    "main.00080f0b.js.map": "/static/js/main.00080f0b.js.map",
+    "main.67c587ab.css.map": "/static/css/main.67c587ab.css.map",
+    "main.afd5f57b.js.map": "/static/js/main.afd5f57b.js.map",
     "787.56381112.chunk.js.map": "/static/js/787.56381112.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05df77b7.css",
-    "static/js/main.00080f0b.js"
+    "static/css/main.67c587ab.css",
+    "static/js/main.afd5f57b.js"
   ]
 }
